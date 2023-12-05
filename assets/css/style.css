@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700| Exo:100,200,300,400,500,600,700');
 
 
 
@@ -115,7 +115,7 @@ header {
 /* Hover.css */
 
 
-.hvr-sweep-to-bottom:before {
-    background-color: rgba(0, 0, 0, 0.2);
+a.hvr-sweep-to-bottom:before {
+    background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
