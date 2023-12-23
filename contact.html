@@ -27,6 +27,17 @@
       src="https://kit.fontawesome.com/d5e5e3db0c.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("B6sbrXOGnM0HTFV_Wtp8Y");
+
+        // emailjs.send("outlook", "D-Resume", templateParams, "EQ5bgLYahe7e0DgiK");
+      })();
+    </script>
   </head>
 
   <body>
@@ -96,7 +107,7 @@
           </h3>
           <h5 class="uppercase text-center">Let's work together!</h5>
           <div class="center-form">
-            <form>
+            <form onsubmit="return sendMail(this);" id="#my-form">
               <input
                 type="text"
                 name="name"
@@ -212,5 +223,6 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/sendEmail.js"></script>
   </body>
 </html>
